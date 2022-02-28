@@ -1,0 +1,12 @@
+.circle{
+    margin-left: 35px;
+    list-style-type:circle;
+}
+
+ol > li {
+    list-style: none;
+}
+
+.no-spacing{
+    margin: 0px;
+}
