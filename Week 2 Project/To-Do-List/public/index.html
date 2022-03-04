@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO-LIST</title>
+    <link rel="stylesheet" href="/To-Do-List/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <div id="top">
+            <h1 id="h1">To Do List</h1>
+            <p id="login">Log in</p>
+        </div>
+
+        <input class="form-control" type="text" id="filter-search" placeholder="Search by name">
+
+        <table class="table table-striped">
+            <tr>
+                <th data-column="name" data-order="desc">Name &#9650</th>
+                <th data-column="category" data-order="desc">Category &#9650</th>
+                <th data-column="deadline" data-order="desc">Deadline &#9650</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+
+            <tbody id="tableData">
+                
+            </tbody>
+        </table>
+
+
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Add a Task" id="add">
+
+            <div id="textdate">
+                    <input class="form-control" type="text" id="category" placeholder="Category">
+                    <input class="form-control" type="date" id="deadline">
+            </div>
+        </div>  
+
+        <!-- empty div for button -->
+        <div id="button"></div>          
+
+    </div>
+    
+</body>
+
+<!-- <script src="../../script.js"></script> -->
+<script src="../js/script.js"></script>
+</html>
+
