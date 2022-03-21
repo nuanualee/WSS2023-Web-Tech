@@ -47,8 +47,12 @@ function buildTable(data){
 $("#tableData").on("click", ".edit", function(){
 
     var currentRow=$(this).closest("tr"); // closest table row
-         
+    console.log(currentRow)
     var name=currentRow.find("td:eq(0)").text(); // 1st td val
+    var haha=currentRow.find("td:eq(0)"); // 1st td val
+    
+
+
     var category=currentRow.find("td:eq(1)").text(); // 2nd td val
     var deadline=currentRow.find("td:eq(2)").text();// 3rd td val
 
@@ -107,7 +111,7 @@ $("#tableData").on("click", ".delete", function(){
             localStorage.setItem('data', JSON.stringify(dataObject));
     
             buildTable(dataObject)
-        }54
+        }
     }
    
    

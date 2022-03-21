@@ -1,0 +1,58 @@
+*{
+    font-family: Helvetica;
+}
+
+.container{
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: auto 0px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+input{
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+input::placeholder{
+    color: black;
+}
+
+.currentPlayer > p{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.grid-board{
+    width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: rgb(34, 34, 61);
+    padding: 5px;
+    grid-column: 10;
+    border-radius: 10px;
+}
+
+.grid{
+    border: 1px black solid;
+    height: 95px;    
+    width: 95px;  
+    margin: 2px;
+
+    font-size: 45px;
+    font-weight: bold;
+    background-color: rgb(80, 80, 109); 
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
